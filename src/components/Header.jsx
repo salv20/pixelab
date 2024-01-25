@@ -28,9 +28,9 @@ const Header = () => {
                             onClick={() => setNav(false)} >
                             <FaBars /></button>
 
-                        <nav className={`${nav ? 'translate-x-full' : 'translate-x-0'} transition-all duration-1000 flex py-8 w-full absolute top-0 flex-col gap-y-6 px-4 left-0 bg-white h-full z-50`}>
+                        <nav className={`${nav ? 'translate-x-full' : 'translate-x-0'} transition-all duration-1000 flex py-6 w-full absolute top-0 flex-col gap-y-4 px-4 left-0 bg-white h-full z-50`}>
                             <button
-                                className='text-primary text-[25px] w-fit relative right-12 ml-auto'
+                                className='text-primary text-[25px] w-fit ml-auto'
                                 onClick={() => setNav(true)}>
                                 <FaTimes /></button>
 

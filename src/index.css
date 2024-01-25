@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.half-circle {
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 3px solid #f60;
+    border-bottom: 0;
+    transform: rotate(-90deg);
+    height: 25px;
+    width: 45px;
+    position: relative;
+    top: 4.5px;
+    left: 35px;
+}
 
 @layer base {
     .section {
-        @apply py-8 lg:py-24 lg:h-screen
+        @apply py-6 lg:py-16 lg:h-screen
     }
 }
