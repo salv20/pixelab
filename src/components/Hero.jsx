@@ -13,7 +13,8 @@ const Hero = () => {
                         </p>
                         <div className="flex gap-x-4 flex-row items-center mx-auto lg:mx-0 lg:mt-4">
                             <button className="text-white py-1.5 px-4 rounded-lg w-fit capitalize font-semibold bg-primary">get started</button>
-                            <img src="/Learn More.png" alt="" className="h-11" />
+                            <img src="play.png" alt="" className="h-11" />
+                            <button className="capitalize text-secondary font-semibold text-sm font-serif">learn more</button>
                         </div>
                     </div>
                     {/*  */}
