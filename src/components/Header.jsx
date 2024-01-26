@@ -5,10 +5,10 @@ const Header = () => {
     const [nav, setNav] = useState(true)
     return (
         <header className="py-8">
-            <div className=" container mx-auto">
+            <div className="container mx-auto">
                 <div className="flex flex-row justify-between items-center font-serif">
 
-                    <img src="/Logo.png" alt="" className="h-6 md:h-8 lg:h-10 mx-auto" />
+                    <img src="/Logo.png" alt="" className="h-6 md:h-8 lg:h-10" />
 
                     <ul className="hidden md:flex gap-x-4 capitalize">
                         <li className="cursor-pointer">home</li>
@@ -17,12 +17,12 @@ const Header = () => {
                         <li className="cursor-pointer">contacts</li>
                     </ul>
 
-                    <div className="hidden md:flex mx-auto gap-x-4">
+                    <div className="hidden md:flex gap-x-4">
                         <button aria-label="log in" className="font-semibold">Log in</button>
                         <button aria-label="sign up" className="bg-primary text-white py-1.5 font-semibold px-4 rounded-md" > Sign up </button>
                     </div>
 
-                    <div className="block md:hidden mx-auto">
+                    <div className="block md:hidden">
                         <button
                             className='text-primary text-[20px]'
                             onClick={() => setNav(false)} >

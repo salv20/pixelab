@@ -3,8 +3,8 @@ import Hero from "./components/Hero"
 
 const App = () => {
   return (
-    <div className=" overflow-hidden relative">
-      <Header />
+    <div className="px-4 sm:px-6 xl:px-20 xxl:px-44 container mx-auto overflow-hidden relative">
+    <Header />
       <Hero />
 
       <div className=" h-[4000px]"></div>
