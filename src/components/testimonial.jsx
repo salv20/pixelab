@@ -23,8 +23,8 @@ const Testimonial = () => {
     <section className="py-14">
     <div className=" container mx-auto">
         <div className=" flex flex-col items-center gap-y-10 lg:gap-y-20 ">
-        <div className=" flex-flex-col gap-y-2 text-center">
-        <h3 className="capitalize font-semibold text-gray-700 sm:text-lg"
+        <div className="grid gap-1 text-center">
+        <h3 className="uppercase font-semibold text-gray-600 text-sm"
           > textimonials  </h3>
         <h1
           className="font-bold text-xl sm:text-2xl text-secondary capitalize"

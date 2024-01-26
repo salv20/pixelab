@@ -1,7 +1,9 @@
 import Blocks from "./components/Blocks"
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Service from "./components/Service"
+import Subscribe from "./components/Subscribe"
 import Team from "./components/Team"
 import Testimonial from "./components/testimonial"
 
@@ -14,7 +16,8 @@ const App = () => {
        <Blocks/>
        <Testimonial/>
        <Team/>
-      <div className=" h-[4000px]"></div>
+       <Subscribe/>
+       <Footer/>
     </div>
   )
 }

@@ -20,8 +20,8 @@ const Service = () => {
     <section className="py-16">
       <div className=" container mx-auto">
         <div className=" flex flex-col items-center gap-y-10 ">
-        <div className=" flex-flex-col gap-y-2 text-center">
-        <h3 className="capitalize font-semibold text-gray-700 sm:text-lg"
+        <div className="text-center grid gap-1">
+        <h3 className="uppercase text-sm font-semibold text-gray-600"
           > services  </h3>
         <h1
           className="google font-bold text-xl sm:text-2xl text-secondary capitalize"
