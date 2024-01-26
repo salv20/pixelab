@@ -2,6 +2,7 @@ import Blocks from "./components/Blocks"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Service from "./components/Service"
+import Team from "./components/Team"
 import Testimonial from "./components/testimonial"
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Service/>
        <Blocks/>
        <Testimonial/>
+       <Team/>
       <div className=" h-[4000px]"></div>
     </div>
   )
