@@ -23,6 +23,6 @@
 
 @layer base {
     .section {
-        @apply py-6 lg:h-screen lg:py-16
+        @apply py-12 lg:h-screen lg:py-16
     }
 }

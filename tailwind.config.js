@@ -6,6 +6,7 @@ export default {
       colors: {
         primary: "#f60",
         secondary: "#0B1B35",
+        tertiary:"#1E0E62"
       },
       screens: {
         sm: "490px",

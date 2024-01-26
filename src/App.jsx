@@ -1,3 +1,4 @@
+import Blocks from "./components/Blocks"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Service from "./components/Service"
@@ -8,7 +9,7 @@ const App = () => {
     <Header />
       <Hero />
       <Service/>
-
+       <Blocks/>
       <div className=" h-[4000px]"></div>
     </div>
   )
