@@ -17,14 +17,14 @@ const services={
 }
 const Service = () => {
   return (
-    <section className="py-12 lg:py-16">
+    <section className="py-16">
       <div className=" container mx-auto">
         <div className=" flex flex-col items-center gap-y-10 ">
         <div className=" flex-flex-col gap-y-2 text-center">
         <h3 className="capitalize font-semibold text-gray-700 sm:text-lg"
           > services  </h3>
         <h1
-          className="google font-semibold text-xl sm:text-2xl text-darkBlue capitalize"
+          className="google font-bold text-xl sm:text-2xl text-secondary capitalize"
         >our vision & our goals </h1>
       </div>
 

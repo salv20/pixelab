@@ -18,6 +18,7 @@ export default {
       spacing: {
         '22rem': '22rem',
         '21rem': '21rem',
+        '460':'460px'
       }
     },
   },
