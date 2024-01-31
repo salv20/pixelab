@@ -11,11 +11,11 @@ const Footer = () => {
         <ul
           className="capitalize flex flex-col sm:flex-row gap-y-2 sm:gap-x-2 lg:gap-x-4"
         >
-          <li>portfolio</li>
-          <li>how it works</li>
-          <li>pricing</li>
-          <li>about</li>
-          <li>login</li>
+          <a href="#">portfolio</a>
+          <a href="#">how it works</a>
+          <a href="#">pricing</a>
+          <a href="#">about</a>
+          <a href="#">login</a>
         </ul>
       </nav>
       </div>

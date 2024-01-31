@@ -1,3 +1,6 @@
+import { FadeIn } from "../../variants" 
+import {motion} from 'framer-motion'
+
 const services={
     icon: [
         '/Activity.png',
@@ -20,17 +23,26 @@ const Service = () => {
     <section className="py-16">
       <div className=" container mx-auto">
         <div className=" flex flex-col items-center gap-y-10 ">
-        <div className="text-center grid gap-1">
+        <motion.div 
+        className="text-center grid gap-1"
+        variants={FadeIn('down',0.3)}
+        initial='hidden'
+        whileInView={'show'}
+        >
         <h3 className="uppercase text-sm font-semibold text-gray-600"
           > services  </h3>
         <h1
           className="google font-bold text-xl sm:text-2xl text-secondary capitalize"
         >our vision & our goals </h1>
-      </div>
+      </motion.div>
 
-      <div
+      <motion.div
         className="grid gap-y-6 lg:gap-y-0 md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 pt-1 md:pt-2 px-2 bg-white rounded-xl pb-4"
-      >
+        variants={FadeIn('left',0.4)}
+        initial='hidden'
+        whileInView={'show'}
+     
+     >
         {
           services.icon.map((icon,index)=>(
              <div
@@ -48,7 +60,7 @@ const Service = () => {
 
           ))
         }
-        </div>
+        </motion.div>
 
 
       {/*  */}

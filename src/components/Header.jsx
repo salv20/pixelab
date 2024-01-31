@@ -11,10 +11,10 @@ const Header = () => {
                     <img src="/Logo.png" alt="" className="h-6 md:h-8 lg:h-10" />
 
                     <ul className="hidden md:flex gap-x-4 capitalize">
-                        <li className="cursor-pointer">home</li>
-                        <li className="cursor-pointer">about us</li>
-                        <li className="cursor-pointer">our app</li>
-                        <li className="cursor-pointer">contacts</li>
+                        <a href='#'>home</a>
+                        <a href='#'>about us</a>
+                        <a href='#'>our app</a>
+                        <a href='#'>contacts</a>
                     </ul>
 
                     <div className="hidden md:flex gap-x-4">
