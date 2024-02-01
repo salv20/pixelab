@@ -1,4 +1,4 @@
-import { FadeIn } from "../../variants" 
+import { FadeIn ,container,item} from "../../variants" 
 import {motion} from 'framer-motion'
 
 const services={
@@ -38,16 +38,17 @@ const Service = () => {
 
       <motion.div
         className="grid gap-y-6 lg:gap-y-0 md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 pt-1 md:pt-2 px-2 bg-white rounded-xl pb-4"
-        variants={FadeIn('left',0.4)}
-        initial='hidden'
-        whileInView={'show'}
-     
+        variants={container(0.4,'right',)}
+        initial='initial'
+        whileInView={'animate'}
      >
         {
           services.icon.map((icon,index)=>(
-             <div
+             <motion.div
               className="flex flex-col items-center text-center gap-y-5 pb-8 p-4 rounded-xl shadow-xl shadow-gray-300"
-              key={index}>
+              key={index}
+              variants={item('left')}
+              >
              <img src={icon} alt="" height='60' width='60' />
              <h2 className="capitalize text-[25px] font-bold ">{services.title[index]}</h2>
              <p className="px-2 text-sm">{services.content}</p>
@@ -56,7 +57,7 @@ const Service = () => {
              className="py-1 mt-4 bg-primary rounded-lg px-4 text-white capitalize"
               >learn more </button>
 
-        </div>
+        </motion.div>
 
           ))
         }

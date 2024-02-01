@@ -1,6 +1,6 @@
 import {FaTwitter, FaFacebookSquare, FaDribbble} from 'react-icons/fa'
 import {motion} from 'framer-motion'
-import { FadeIn } from '../../variants'
+import { FadeIn,container,item } from '../../variants'
 
 const teamMate={
     profile:[
@@ -39,15 +39,17 @@ const Team = () => {
 
     <motion.div
       className="w-full gap-5 grid sm:grid-cols-2 lg:grid-cols-3"
-      variants={FadeIn('left',0.3)}
-      initial='hidden'
-      whileInView={'show'}
+      variants={container(0.4,'left',)}
+      initial='initial'
+      whileInView={'animate'}
     >
         {
             teamMate.profile.map((pro,index)=>(
-                <div
+                <motion.div
+                className=" border-2 text-gray-600 pt-10 rounded-lg flex flex-col gap-y-4"
                 key={index}
-                className=" border-2 text-gray-600 pt-10 rounded-lg flex flex-col gap-y-4">
+                variants={item('right')}
+                >
                 <img src={pro} alt="" className='mx-auto'/>
                 <h3 className=' text-tertiary font-bold  capitalize'>{teamMate.name[index]}</h3>
                 <p className=' font-semibold font-serif uppercase'>{teamMate.role[index]}</p>
@@ -63,7 +65,7 @@ const Team = () => {
                   <FaDribbble/>
          </button>
          </div>
-                </div>
+                </motion.div>
             ))
         }
 </motion.div>

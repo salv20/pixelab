@@ -1,3 +1,6 @@
+import { motion} from 'framer-motion'
+import { item,container } from '../../variants'
+
 const testimony={
   profile:[
     '/Mask.png',
@@ -19,6 +22,7 @@ const testimony={
 
 }
 const Testimonial = () => {
+  
   return (
     <section className="py-14">
     <div className=" container mx-auto">
@@ -30,20 +34,29 @@ const Testimonial = () => {
           className="font-bold text-xl sm:text-2xl text-secondary capitalize"
         >what clients say about us </h1>
       </div>
- <div className="grid gap-y-16 gap-x-10 lg:gap-x-24 md:grid-cols-2 items-center md:px-12 xl:px-24">
+ <motion.div 
+ className="grid gap-y-16 gap-x-10 lg:gap-x-24 md:grid-cols-2 items-center md:px-12 xl:px-24"
+variants={container(3.5,'up')}
+initial='initial'
+whileInView={'animate'}
+ >
 
   {
     testimony.profile.map((pro,index)=>(
-      <div className="flex items-start gap-x-6" key={index}>
+      <motion.div 
+      className="flex items-start gap-x-6" 
+      key={index}
+      variants={item('up')}
+      >
         <img src={pro} alt="" />
         <div className="flex flex-col gap-y-6">
           <p className="text-secondary font-semibold">{testimony.comment[index]}</p>
           <h3 className="capitalize font-bold text-gray-500">{testimony.name[index]}</h3>
         </div>
-      </div>
+      </motion.div>
     ))
   }
- </div>
+ </motion.div>
 
 
   {/*  */}
