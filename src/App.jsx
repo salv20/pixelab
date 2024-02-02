@@ -9,7 +9,7 @@ import Testimonial from "./components/testimonial"
 
 const App = () => {
   return (
-    <div className="px-4 xl:px-10 container mx-auto overflow-hidden relative">
+    <div className="xl:px-5 container mx-auto overflow-hidden relative">
       <Header />
       <Hero />
       <Service/>
